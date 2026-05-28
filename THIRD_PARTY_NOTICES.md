@@ -1,405 +1,405 @@
-# **Third-Party Notices**
+# **第三方声明**
 
-THE FOLLOWING SETS FORTH ATTRIBUTION NOTICES FOR THIRD PARTY SOFTWARE THAT MAY BE CONTAINED IN PORTIONS OF THIS PRODUCT.
-
----
-
-## **BSD 2-Clause License**
-
-The following components are licensed under BSD 2-Clause License reproduced below:
-
-**imageio 2.37.0**, Copyright (c) 2014-2022, imageio developers
-
-**imageio-ffmpeg 0.6.0**, Copyright (c) 2019-2025, imageio 
-
-**License Text:**
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.  
-     
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+以下列出本产品部分内容中可能包含的第三方软件的归属声明。
 
 ---
 
-## **GNU General Public License v3.0**
+## **BSD 2-Clause License（BSD 二条款许可证）**
 
-The following components are licensed under GNU General Public License v3.0 reproduced below:
+以下组件根据下文转载的 BSD 2-Clause License 获得许可：
 
-**FFmpeg 7.0.2**, Copyright (c) 2000-2024 the FFmpeg developers
+**imageio 2.37.0**，版权所有 (c) 2014-2022，imageio developers
 
-Source Code: [https://ffmpeg.org/releases/ffmpeg-7.0.2.tar.xz](https://ffmpeg.org/releases/ffmpeg-7.0.2.tar.xz)
+**imageio-ffmpeg 0.6.0**，版权所有 (c) 2019-2025，imageio
 
-**License Text:**
+**许可证文本：**
 
-GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+在满足以下条件的前提下，允许以源代码和二进制形式重新分发和使用，无论是否修改：
 
-Copyright © 2007 Free Software Foundation, Inc. [https://fsf.org/](https://fsf.org/)
+1. 以源代码形式重新分发时，必须保留上述版权声明、本条件列表以及以下免责声明。
 
-Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+2. 以二进制形式重新分发时，必须在随分发提供的文档和/或其他材料中复制上述版权声明、本条件列表以及以下免责声明。
 
-Preamble
+本软件由版权持有人和贡献者按“原样”提供，不提供任何明示或默示的保证，包括但不限于对适销性和特定用途适用性的默示保证。在任何情况下，版权持有人或贡献者均不对任何直接、间接、偶然、特殊、惩戒性或后果性损害承担责任（包括但不限于替代商品或服务的采购、使用中断、数据或利润损失、业务中断），无论该损害如何造成，也无论基于何种责任理论，无论是合同责任、严格责任还是侵权责任（包括疏忽或其他），即使已被告知可能发生此类损害，也不例外。
 
-The GNU General Public License is a free, copyleft license for software and other kinds of works.
+---
 
-The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.
+## **GNU General Public License v3.0（GNU 通用公共许可证 v3.0）**
 
-When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things.
+以下组件根据下文转载的 GNU General Public License v3.0 获得许可：
 
-To protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others.
+**FFmpeg 7.0.2**，版权所有 (c) 2000-2024，FFmpeg developers
 
-For example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.
+源代码：[https://ffmpeg.org/releases/ffmpeg-7.0.2.tar.xz](https://ffmpeg.org/releases/ffmpeg-7.0.2.tar.xz)
 
-Developers that use the GNU GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.
+**许可证文本：**
 
-For the developers' and authors' protection, the GPL clearly explains that there is no warranty for this free software. For both users' and authors' sake, the GPL requires that modified versions be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions.
+GNU 通用公共许可证 第 3 版，2007 年 6 月 29 日
 
-Some devices are designed to deny users access to install or run modified versions of the software inside them, although the manufacturer can do so. This is fundamentally incompatible with the aim of protecting users' freedom to change the software. The systematic pattern of such abuse occurs in the area of products for individuals to use, which is precisely where it is most unacceptable. Therefore, we have designed this version of the GPL to prohibit the practice for those products. If such problems arise substantially in other domains, we stand ready to extend this provision to those domains in future versions of the GPL, as needed to protect the freedom of users.
+版权所有 © 2007 Free Software Foundation, Inc. [https://fsf.org/](https://fsf.org/)
 
-Finally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. To prevent this, the GPL assures that patents cannot be used to render the program non-free.
+允许任何人复制和分发本许可证文档的完整副本，但不得修改。
 
-The precise terms and conditions for copying, distribution and modification follow.
+序言
 
-TERMS AND CONDITIONS
+GNU 通用公共许可证是一份面向软件和其他类型作品的自由、著佐权许可证。
 
-0. Definitions.
+大多数软件和其他实用作品的许可证被设计为剥夺你共享和修改这些作品的自由。相比之下，GNU 通用公共许可证旨在保证你共享和修改一个程序所有版本的自由，确保它对所有用户始终是自由软件。我们，自由软件基金会，将 GNU 通用公共许可证用于我们的大多数软件；它也适用于作者以这种方式发布的任何其他作品。你也可以将它用于你的程序。
 
-"This License" refers to version 3 of the GNU General Public License.
+当我们谈论自由软件时，我们指的是自由，而不是价格。我们的通用公共许可证旨在确保你拥有分发自由软件副本的自由（如果愿意也可以收费）、确保你能收到源代码或在需要时获取源代码、确保你可以修改软件或在新的自由程序中使用其中的部分内容，并确保你知道自己可以做这些事。
 
-"Copyright" also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.
+为了保护你的权利，我们需要防止他人否认你的这些权利，或要求你放弃这些权利。因此，如果你分发该软件的副本，或修改该软件，你就负有某些责任：尊重他人自由的责任。
 
-"The Program" refers to any copyrightable work licensed under this License. Each licensee is addressed as "you". "Licensees" and "recipients" may be individuals or organizations.
+例如，如果你分发这样一个程序的副本，无论免费还是收费，都必须将你获得的同样自由传递给接收者。你必须确保他们也能收到或能够获得源代码。并且你必须向他们展示这些条款，使他们了解自己的权利。
 
-To "modify" a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a "modified version" of the earlier work or a work "based on" the earlier work.
+使用 GNU GPL 的开发者通过两个步骤保护你的权利：（1）主张软件的版权；（2）向你提供本许可证，授予你复制、分发和/或修改该软件的法律许可。
 
-A "covered work" means either the unmodified Program or a work based on the Program.
+为了保护开发者和作者，GPL 明确说明此自由软件不提供任何保证。为兼顾用户和作者，GPL 要求修改版本必须标明已经修改，以免其问题被错误归咎于先前版本的作者。
 
-To "propagate" a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.
+有些设备被设计为拒绝用户在其中安装或运行修改后的软件版本，尽管制造商可以这样做。这与保护用户修改软件自由的目标根本不相容。这类滥用的系统性模式发生在供个人使用的产品领域，而这恰恰是最不可接受的领域。因此，我们设计本版本 GPL，禁止这些产品中的此类做法。如果此类问题在其他领域大量出现，我们也准备在未来版本的 GPL 中将该规定扩展到那些领域，以便在必要时保护用户的自由。
 
-To "convey" a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.
+最后，每个程序都不断受到软件专利的威胁。各国不应允许专利限制通用计算机上软件的开发和使用；但在允许这种情况的国家，我们希望避免一种特殊危险，即适用于自由程序的专利可能使该程序实际上成为专有软件。为防止这种情况，GPL 确保专利不能被用来使程序变为非自由。
 
-An interactive user interface displays "Appropriate Legal Notices" to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that licensees may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list meets this criterion.
+以下是复制、分发和修改的具体条款与条件。
 
-1. Source Code.
+条款和条件
 
-The "source code" for a work means the preferred form of the work for making modifications to it. "Object code" means any non-source form of a work.
+0. 定义。
 
-A "Standard Interface" means an interface that either is an official standard defined by a recognized standards body, or, in the case of interfaces specified for a particular programming language, one that is widely used among developers working in that language.
+“本许可证”指 GNU 通用公共许可证第 3 版。
 
-The "System Libraries" of an executable work include anything, other than the work as a whole, that (a) is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and (b) serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A "Major Component", in this context, means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.
+“版权”也包括适用于其他类型作品的类似版权的法律，例如半导体掩模作品。
 
-The "Corresponding Source" for a work in object code form means all the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the work's System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work. For example, Corresponding Source includes interface definition files associated with source files for the work, and the source code for shared libraries and dynamically linked subprograms that the work is specifically designed to require, such as by intimate data communication or control flow between those subprograms and other parts of the work.
+“本程序”指根据本许可证授权的任何可受版权保护的作品。每个被许可人称为“你”。“被许可人”和“接收者”可以是个人或组织。
 
-The Corresponding Source need not include anything that users can regenerate automatically from other parts of the Corresponding Source.
+“修改”一个作品，是指以需要版权许可的方式复制或改编该作品的全部或部分内容，但制作精确副本除外。产生的作品称为先前作品的“修改版本”，或称为“基于”先前作品的作品。
 
-The Corresponding Source for a work in source code form is that same work.
+“受保护作品”指未修改的本程序，或基于本程序的作品。
 
-2. Basic Permissions.
+“传播”一个作品，是指在没有许可的情况下会使你根据适用版权法直接或间接承担侵权责任的任何行为，但在计算机上运行该作品或修改私人副本除外。传播包括复制、分发（无论是否修改）、向公众提供，以及在某些国家/地区的其他活动。
 
-All rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.
+“传递”一个作品，是指任何使其他方能够制作或接收副本的传播方式。仅通过计算机网络与用户交互，而不转移副本，并不构成传递。
 
-You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
+交互式用户界面在包含一个方便且醒目可见的功能时，即视为显示“适当的法律声明”，该功能应当：（1）显示适当的版权声明；（2）告知用户该作品没有保证（除非已提供保证）、被许可人可以根据本许可证传递该作品，以及如何查看本许可证的副本。如果该界面提供用户命令或选项列表，例如菜单，则列表中的醒目项目即满足此标准。
 
-Conveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.
+1. 源代码。
 
-3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+作品的“源代码”指对其进行修改的首选形式。“目标代码”指作品的任何非源代码形式。
 
-No covered work shall be deemed part of an effective technological measure under any applicable law fulfilling obligations under article 11 of the WIPO copyright treaty adopted on 20 December 1996, or similar laws prohibiting or restricting circumvention of such measures.
+“标准接口”指由公认标准机构定义的官方标准接口，或者，在为特定编程语言指定的接口情形下，指该语言开发者广泛使用的接口。
 
-When you convey a covered work, you waive any legal power to forbid circumvention of technological measures to the extent such circumvention is effected by exercising rights under this License with respect to the covered work, and you disclaim any intention to limit operation or modification of the work as a means of enforcing, against the work's users, your or third parties' legal rights to forbid circumvention of technological measures.
+可执行作品的“系统库”包括除作品整体之外的任何内容，前提是该内容：（a）包含在主要组件的正常打包形式中，但并非该主要组件的一部分；并且（b）仅用于使该作品能够与该主要组件一起使用，或用于实现一个已有源代码形式实现可供公众使用的标准接口。在此语境中，“主要组件”指可执行作品运行所在的特定操作系统（如有）的主要必要组件（内核、窗口系统等），或用于生成该作品的编译器，或用于运行该作品的目标代码解释器。
 
-4. Conveying Verbatim Copies.
+目标代码形式作品的“对应源代码”指生成、安装并（对于可执行作品）运行该目标代码以及修改该作品所需的全部源代码，包括控制这些活动的脚本。但是，它不包括该作品的系统库，也不包括在执行这些活动时未经修改而使用、并且不是该作品一部分的通用工具或通常可获得的自由程序。例如，对应源代码包括与该作品源文件相关联的接口定义文件，以及该作品被特别设计为需要的共享库和动态链接子程序的源代码，例如这些子程序与该作品其他部分之间通过紧密的数据通信或控制流相互作用。
 
-You may convey verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code; keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.
+对应源代码不需要包括用户可以从对应源代码的其他部分自动重新生成的任何内容。
 
-You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.
+源代码形式作品的对应源代码就是该作品本身。
 
-5. Conveying Modified Source Versions.
+2. 基本许可。
 
-You may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:
+本许可证授予的所有权利均在本程序版权期限内授予，并且只要满足所列条件，即不可撤销。本许可证明确确认你拥有运行未修改本程序的不受限制的许可。运行受保护作品所产生的输出，仅在其内容构成受保护作品时才受本许可证约束。本许可证承认你根据版权法享有的合理使用权或其他等同权利。
 
-a) The work must carry prominent notices stating that you modified it, and giving a relevant date.
+只要你的许可证在其他方面仍然有效，你可以无条件地制作、运行和传播你不传递的受保护作品。你可以将受保护作品传递给他人，仅为让他们专门为你进行修改，或为你提供运行这些作品的设施；但你在传递所有你不控制版权的材料时，必须遵守本许可证的条款。那些为你制作或运行受保护作品的人，必须专门代表你、在你的指示和控制下这样做，并且其条款必须禁止他们在与你的关系之外制作你的受版权保护材料的任何副本。
 
-b) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7\. This requirement modifies the requirement in section 4 to "keep intact all notices".
+在任何其他情况下进行传递，仅在符合以下所列条件时才被允许。不允许再许可；第 10 条使再许可没有必要。
 
-c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.
+3. 保护用户免受反规避法影响的法律权利。
 
-d) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.
+任何受保护作品均不得被视为有效技术措施的一部分，无论该技术措施是否依据任何适用法律履行 1996 年 12 月 20 日通过的 WIPO 版权条约第 11 条规定的义务，或依据类似的禁止或限制规避此类措施的法律。
 
-A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an "aggregate" if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.
+当你传递受保护作品时，你放弃任何禁止规避技术措施的法律权力，但仅限于该规避是通过行使本许可证就该受保护作品授予的权利而实现的范围内；并且你声明无意通过限制该作品的运行或修改来对抗该作品用户，从而执行你或第三方禁止规避技术措施的法律权利。
 
-6. Conveying Non-Source Forms.
+4. 传递完整副本。
 
-You may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:
+你可以在任何媒介中传递你收到的本程序源代码的完整副本，前提是你在每个副本上醒目且适当地发布适当的版权声明；保持所有声明本许可证以及依第 7 条添加的任何非许可性条款适用于该代码的声明完整；保持所有关于无保证的声明完整；并随本程序向所有接收者提供本许可证的副本。
 
-a) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by the Corresponding Source fixed on a durable physical medium customarily used for software interchange.
+你可以对传递的每份副本收取任何价格，也可以不收费，并且可以收费提供支持或保证保护。
 
-b) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.
+5. 传递修改后的源代码版本。
 
-c) Convey individual copies of the object code with a copy of the written offer to provide the Corresponding Source. This alternative is allowed only occasionally and noncommercially, and only if you received the object code with such an offer, in accord with subsection 6b.
+你可以根据第 4 条的条款，以源代码形式传递基于本程序的作品，或用于从本程序生成该作品的修改内容，前提是你还满足以下所有条件：
 
-d) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.
+a) 该作品必须带有醒目的声明，说明你修改了它，并给出相关日期。
 
-e) Convey the object code using peer-to-peer transmission, provided you inform other peers where the object code and Corresponding Source of the work are being offered to the general public at no charge under subsection 6d.
+b) 该作品必须带有醒目的声明，说明它根据本许可证以及第 7 条下添加的任何条件发布。本要求修改了第 4 条中“保持所有声明完整”的要求。
 
-A separable portion of the object code, whose source code is excluded from the Corresponding Source as a System Library, need not be included in conveying the object code work.
+c) 你必须将整个作品作为一个整体，根据本许可证授权给任何获得副本的人。因此，本许可证将连同任何适用的第 7 条附加条款，适用于该作品整体及其所有部分，无论它们如何打包。本许可证不授予以任何其他方式许可该作品的权限，但如果你已另外获得此类许可，本许可证并不使其失效。
 
-A "User Product" is either (1) a "consumer product", which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, "normally used" refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.
+d) 如果该作品具有交互式用户界面，每个界面都必须显示适当的法律声明；但是，如果本程序的交互式界面不显示适当的法律声明，你的作品无需使它们显示。
 
-"Installation Information" for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.
+将受保护作品与其他独立且分离的作品汇编在一起，如果这些其他作品本质上不是受保护作品的扩展，也未与其结合形成更大的程序，并且这种汇编位于存储或分发介质的卷中或之上，则称为“聚合作品”，但前提是该汇编及其产生的版权不得被用来限制该汇编用户对各单独作品所允许的访问或法律权利。将受保护作品纳入聚合作品，并不会使本许可证适用于该聚合作品的其他部分。
 
-If you convey an object code work under this section in, or with, or specifically for use in, a User Product, and the conveying occurs as part of a transaction in which the right of possession and use of the User Product is transferred to the recipient in perpetuity or for a fixed term (regardless of how the transaction is characterized), the Corresponding Source conveyed under this section must be accompanied by the Installation Information. But this requirement does not apply if neither you nor any third party retains the ability to install modified object code on the User Product (for example, the work has been installed in ROM).
+6. 传递非源代码形式。
 
-The requirement to provide Installation Information does not include a requirement to continue to provide support service, warranty, or updates for a work that has been modified or installed by the recipient, or for the User Product in which it has been modified or installed. Access to a network may be denied when the modification itself materially and adversely affects the operation of the network or violates the rules and protocols for communication across the network.
+你可以根据第 4 条和第 5 条的条款，以目标代码形式传递受保护作品，前提是你还根据本许可证条款，以下列方式之一传递机器可读的对应源代码：
 
-Corresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.
+a) 在实体产品（包括实体分发介质）中或随实体产品传递目标代码，并随附固定在通常用于软件交换的耐久实体介质上的对应源代码。
 
-7. Additional Terms.
+b) 在实体产品（包括实体分发介质）中或随实体产品传递目标代码，并随附一份书面报价，该报价至少三年有效，且只要你为该产品型号提供备件或客户支持即持续有效；该报价应向任何拥有目标代码的人提供以下任一项：（1）在通常用于软件交换的耐久实体介质上提供该产品中所有受本许可证约束软件的对应源代码副本，其价格不高于你实际执行此源代码传递的合理成本；或（2）允许其免费从网络服务器复制对应源代码。
 
-"Additional permissions" are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.
+c) 传递目标代码的单独副本，并附带提供对应源代码的书面报价副本。此方式仅允许偶尔且非商业性地使用，并且仅当你根据第 6b 款收到带有此类报价的目标代码时才可使用。
 
-When you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.
+d) 通过从指定地点提供访问（免费或收费）来传递目标代码，并通过同一地点以同样方式提供对对应源代码的等同访问，且不收取额外费用。你无需要求接收者在复制目标代码的同时复制对应源代码。如果复制目标代码的地点是网络服务器，对应源代码可以位于支持等同复制设施的另一台服务器上（由你或第三方运营），但你必须在目标代码旁边保持清晰说明，指出在哪里可以找到对应源代码。无论哪个服务器托管对应源代码，你仍有义务确保其在满足这些要求所需的期间内保持可用。
 
-Notwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:
+e) 使用点对点传输传递目标代码，前提是你告知其他对等方，根据第 6d 款，该作品的目标代码和对应源代码正在何处免费向公众提供。
 
-a) Disclaiming warranty or limiting liability differently from the terms of sections 15 and 16 of this License; or
+目标代码中某个可分离部分，如果其源代码作为系统库被排除在对应源代码之外，则在传递该目标代码作品时无需包含。
 
-b) Requiring preservation of specified reasonable legal notices or author attributions in that material or in the Appropriate Legal Notices displayed by works containing it; or
+“用户产品”是指以下任一项：（1）“消费品”，即通常用于个人、家庭或家居目的的任何有形个人财产；或（2）任何被设计或销售用于并入住宅的物品。在判断某一产品是否为消费品时，有疑问的情形应有利于认定为涵盖在内。对于某个特定用户收到的特定产品，“通常用于”指该类产品的典型或普通用途，而不考虑该特定用户的身份，也不考虑该特定用户实际使用、预期使用或被预期使用该产品的方式。即使某产品具有大量商业、工业或非消费用途，它仍是消费品，除非这些用途代表该产品唯一重要的使用方式。
 
-c) Prohibiting misrepresentation of the origin of that material, or requiring that modified versions of such material be marked in reasonable ways as different from the original version; or
+用户产品的“安装信息”指在该用户产品中，从其对应源代码的修改版本安装并执行受保护作品的修改版本所需的任何方法、程序、授权密钥或其他信息。该信息必须足以确保修改后的目标代码的持续运行不会仅因已经进行了修改而被阻止或干扰。
 
-d) Limiting the use for publicity purposes of names of licensors or authors of the material; or
+如果你根据本条在用户产品中、随用户产品或专为用户产品使用而传递目标代码作品，并且该传递发生在一项交易中，其中该用户产品的占有权和使用权被永久或在固定期限内转移给接收者（无论该交易如何被定性），则根据本条传递的对应源代码必须附带安装信息。但如果你和任何第三方均不保留在该用户产品上安装修改后目标代码的能力（例如，该作品已安装在 ROM 中），则此要求不适用。
 
-e) Declining to grant rights under trademark law for use of some trade names, trademarks, or service marks; or
+提供安装信息的要求不包括继续为已由接收者修改或安装的作品，或为其中已修改或安装该作品的用户产品提供支持服务、保证或更新的要求。当修改本身实质性且不利地影响网络运行，或违反跨网络通信的规则和协议时，可以拒绝网络访问。
 
-f) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.
+根据本条传递的对应源代码和提供的安装信息，必须采用公开记录的格式（并且有可供公众以源代码形式获得的实现），且不得要求特殊密码或密钥才能解包、读取或复制。
 
-All other non-permissive additional terms are considered "further restrictions" within the meaning of section 10\. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.
+7. 附加条款。
 
-If you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.
+“附加许可”是通过对本许可证的一个或多个条件作出例外来补充本许可证条款的条款。适用于整个本程序的附加许可，在适用法律允许的范围内，应视为已经包含在本许可证中。如果附加许可仅适用于本程序的一部分，该部分可根据这些许可单独使用，但整个本程序仍受本许可证约束，不受这些附加许可影响。
 
-Additional terms, permissive or non-permissive, may be stated in the form of a separately written license, or stated as exceptions; the above requirements apply either way.
+当你传递受保护作品的副本时，你可以选择从该副本或其任何部分中移除任何附加许可。（附加许可可以写明在你修改该作品时要求其在某些情况下被移除。）对于你添加到受保护作品中、并且你拥有或能够授予适当版权许可的材料，你可以设置附加许可。
 
-8. Termination.
+尽管本许可证有任何其他规定，对于你添加到受保护作品的材料，如果该材料的版权持有人授权，你可以用以下条款补充本许可证的条款：
 
-You may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).
+a) 以不同于本许可证第 15 条和第 16 条的方式否认保证或限制责任；或
 
-However, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.
+b) 要求在该材料中，或在包含该材料的作品所显示的适当法律声明中，保留指定的合理法律声明或作者署名；或
 
-Moreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.
+c) 禁止误示该材料的来源，或要求以合理方式标明该材料的修改版本不同于原始版本；或
 
-Termination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, you do not qualify to receive new licenses for the same material under section 10\.
+d) 限制出于宣传目的使用该材料的许可人或作者姓名；或
 
-9. Acceptance Not Required for Having Copies.
+e) 拒绝授予商标法下使用某些商号、商标或服务标志的权利；或
 
-You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.
+f) 要求任何传递该材料（或其修改版本）并向接收者作出合同责任承担的人，就这些合同责任对许可人和作者直接施加的任何责任，对该材料的许可人和作者作出赔偿。
 
-10. Automatic Licensing of Downstream Recipients.
+所有其他非许可性的附加条款均被视为第 10 条含义下的“进一步限制”。如果你收到的本程序或其任何部分包含一项声明，说明其受本许可证以及某个进一步限制条款管辖，你可以移除该条款。如果某许可证文档包含进一步限制，但允许根据本许可证重新许可或传递，你可以将受该许可证文档条款管辖的材料添加到受保护作品中，前提是该进一步限制不会在此类重新许可或传递后继续存在。
 
-Each time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.
+如果你依照本条向受保护作品添加条款，必须在相关源文件中放置一项声明，说明适用于这些文件的附加条款，或放置一项说明在哪里可以找到适用条款的声明。
 
-An "entity transaction" is a transaction transferring control of an organization, or substantially all assets of one, or subdividing an organization, or merging organizations. If propagation of a covered work results from an entity transaction, each party to that transaction who receives a copy of the work also receives whatever licenses to the work the party's predecessor in interest had or could give under the previous paragraph, plus a right to possession of the Corresponding Source of the work from the predecessor in interest, if the predecessor has it or can get it with reasonable efforts.
+附加条款，无论是许可性的还是非许可性的，都可以采用单独书面许可证的形式，也可以声明为例外；上述要求无论哪种方式均适用。
 
-You may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.
+8. 终止。
 
-11. Patents.
+除非本许可证明确规定，否则你不得传播或修改受保护作品。任何以其他方式传播或修改的尝试均无效，并会自动终止你在本许可证下的权利（包括第 11 条第三段授予的任何专利许可）。
 
-A "contributor" is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor's "contributor version".
+但是，如果你停止所有违反本许可证的行为，则来自特定版权持有人的许可证将恢复：（a）临时恢复，除非并直到该版权持有人明确且最终终止你的许可证；以及（b）永久恢复，如果该版权持有人未在停止违规后的 60 天内通过某种合理方式通知你该违规。
 
-A contributor's "essential patent claims" are all patent claims owned or controlled by the contributor, whether already acquired or hereafter acquired, that would be infringed by some manner, permitted by this License, of making, using, or selling its contributor version, but do not include claims that would be infringed only as a consequence of further modification of the contributor version. For purposes of this definition, "control" includes the right to grant patent sublicenses in a manner consistent with the requirements of this License.
+此外，如果某特定版权持有人通过某种合理方式通知你违规，这是你首次从该版权持有人收到关于本许可证违规的通知（针对任何作品），并且你在收到通知后的 30 天内纠正该违规，则你从该版权持有人获得的许可证将永久恢复。
 
-Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.
+根据本条终止你的权利，并不会终止已根据本许可证从你处收到副本或权利的各方的许可证。如果你的权利已被终止且未永久恢复，你没有资格根据第 10 条就同一材料获得新的许可证。
 
-In the following three paragraphs, a "patent license" is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To "grant" such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.
+9. 拥有副本无需接受。
 
-If you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. "Knowingly relying" means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient's use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.
+你无需接受本许可证即可接收或运行本程序的副本。仅因使用点对点传输接收副本而发生的受保护作品附带传播，同样无需接受本许可证。但是，除本许可证外，没有任何东西授予你传播或修改任何受保护作品的许可。如果你不接受本许可证而进行这些行为，将侵犯版权。因此，通过修改或传播受保护作品，你表明自己接受本许可证以进行这些行为。
 
-If, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.
+10. 下游接收者的自动授权。
 
-A patent license is "discriminatory" if it does not include within the scope of its coverage, prohibits the exercise of, or is conditioned on the non-exercise of one or more of the rights that are specifically granted under this License. You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license (a) in connection with copies of the covered work conveyed by you (or copies made from those copies), or (b) primarily for and in connection with specific products or compilations that contain the covered work, unless you entered into that arrangement, or that patent license was granted, prior to 28 March 2007\.
+每当你传递受保护作品时，接收者自动从原许可人获得一项许可证，可根据本许可证运行、修改和传播该作品。你不负责强制第三方遵守本许可证。
 
-Nothing in this License shall be construed as excluding or limiting any implied license or other defenses to infringement that may otherwise be available to you under applicable patent law.
+“实体交易”是指转移一个组织的控制权或其实质上全部资产、分立一个组织，或合并组织的交易。如果受保护作品的传播源于实体交易，则该交易中收到作品副本的每一方，也同时获得该方权益前手根据前款已经拥有或能够授予的该作品任何许可证，并且如果该权益前手拥有对应源代码或能够通过合理努力获得对应源代码，该方还获得占有该作品对应源代码的权利。
 
-12. No Surrender of Others' Freedom.
+你不得对本许可证授予或确认的权利的行使施加任何进一步限制。例如，你不得为行使本许可证授予的权利收取许可费、特许权使用费或其他费用，也不得提起诉讼（包括诉讼中的交叉请求或反请求），声称制作、使用、销售、许诺销售或进口本程序或其任何部分侵犯了任何专利权利要求。
 
-If conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot convey a covered work so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not convey it at all. For example, if you agree to terms that obligate you to collect a royalty for further conveying from those to whom you convey the Program, the only way you could satisfy both those terms and this License would be to refrain entirely from conveying the Program.
+11. 专利。
 
-13. Use with the GNU Affero General Public License.
+“贡献者”是指授权根据本许可证使用本程序或本程序所基于作品的版权持有人。这样授权的作品称为该贡献者的“贡献者版本”。
 
-Notwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.
+贡献者的“必要专利权利要求”是指贡献者拥有或控制的所有专利权利要求，无论已经取得还是以后取得；这些权利要求会因以本许可证允许的某种方式制作、使用或销售其贡献者版本而受到侵犯，但不包括仅因进一步修改该贡献者版本而受到侵犯的权利要求。就本定义而言，“控制”包括以符合本许可证要求的方式授予专利再许可的权利。
 
-14. Revised Versions of this License.
+每位贡献者根据其必要专利权利要求，向你授予一项非排他、全球范围、免许可费的专利许可，使你可以制作、使用、销售、许诺销售、进口以及以其他方式运行、修改和传播其贡献者版本的内容。
 
-The Free Software Foundation may publish revised and/or new versions of the GNU General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.
+在以下三段中，“专利许可”指任何明确协议或承诺，无论其名称如何，只要其内容是不执行专利（例如明确允许实施专利，或承诺不就专利侵权起诉）。向某一方“授予”此类专利许可，是指作出不对该方执行专利的此类协议或承诺。
 
-Each version is given a distinguishing version number. If the Program specifies that a certain numbered version of the GNU General Public License "or any later version" applies to it, you have the option of following the terms and conditions either of that numbered version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of the GNU General Public License, you may choose any version ever published by the Free Software Foundation.
+如果你在明知依赖某项专利许可的情况下传递受保护作品，而该作品的对应源代码不能让任何人通过公开可访问的网络服务器或其他易于访问的方式，免费并根据本许可证条款复制，则你必须采取以下任一措施：（1）使对应源代码能够以这种方式提供；或（2）安排使你自己丧失针对该特定作品享有该专利许可利益的资格；或（3）以符合本许可证要求的方式，将该专利许可扩展给下游接收者。“明知依赖”指你实际知道，如果没有该专利许可，你在某一国家/地区传递受保护作品，或你的接收者在某一国家/地区使用受保护作品，将侵犯该国家/地区内一个或多个你有理由认为有效的可识别专利。
 
-If the Program specifies that a proxy can decide which future versions of the GNU General Public License can be used, that proxy's public statement of acceptance of a version permanently authorizes you to choose that version for the Program.
+如果你根据或关联于单一交易或安排，传递受保护作品，或通过促成传递来传播受保护作品，并向收到该受保护作品的某些方授予专利许可，授权他们使用、传播、修改或传递该受保护作品的特定副本，则你授予的该专利许可会自动扩展至该受保护作品及基于它的作品的所有接收者。
 
-Later license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.
+如果一项专利许可不在其涵盖范围内包括本许可证明确授予的一项或多项权利的行使，禁止行使这些权利，或以不行使这些权利为条件，则该专利许可是“歧视性的”。如果你与从事软件分发业务的第三方存在一项安排，在该安排下你基于传递作品的活动程度向该第三方付款，并且该第三方向任何会从你处收到受保护作品的各方授予一项歧视性专利许可，则你不得传递受保护作品；该歧视性专利许可无论是（a）与由你传递的受保护作品副本（或从这些副本制作的副本）相关，还是（b）主要针对并关联于包含受保护作品的特定产品或汇编，均适用；除非你在 2007 年 3 月 28 日之前已加入该安排，或该专利许可在该日期之前已经授予。
 
-15. Disclaimer of Warranty.
+本许可证中的任何内容均不得解释为排除或限制你根据适用专利法可能享有的任何默示许可或其他侵权抗辩。
 
-THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+12. 不放弃他人的自由。
 
-16. Limitation of Liability.
+如果施加在你身上的条件（无论是法院命令、协议还是其他方式）与本许可证的条件相冲突，它们并不免除你遵守本许可证条件的义务。如果你无法以同时满足本许可证义务和任何其他相关义务的方式传递受保护作品，那么结果是你根本不得传递它。例如，如果你同意某些条款，要求你向你传递本程序的人收取进一步传递的特许权使用费，那么你同时满足这些条款和本许可证的唯一方式，就是完全不传递本程序。
 
-IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+13. 与 GNU Affero 通用公共许可证一起使用。
 
-17. Interpretation of Sections 15 and 16\.
+尽管本许可证有任何其他规定，你有权将任何受保护作品与根据 GNU Affero 通用公共许可证第 3 版授权的作品链接或组合为单一组合作品，并传递产生的作品。本许可证的条款将继续适用于其中属于受保护作品的部分，但 GNU Affero 通用公共许可证第 13 条关于通过网络交互的特殊要求，将适用于该组合作品整体。
 
-If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.
+14. 本许可证的修订版本。
 
-END OF TERMS AND CONDITIONS
+自由软件基金会可能不时发布 GNU 通用公共许可证的修订版本和/或新版本。这些新版本将在精神上类似于当前版本，但可能在细节上有所不同，以处理新的问题或关切。
 
-How to Apply These Terms to Your New Programs
+每个版本都会有一个不同的版本号。如果本程序指定某个编号版本的 GNU 通用公共许可证“或任何后续版本”适用于它，你可以选择遵循该编号版本或自由软件基金会发布的任何后续版本的条款和条件。如果本程序未指定 GNU 通用公共许可证的版本号，你可以选择自由软件基金会曾经发布的任何版本。
 
-If you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.
+如果本程序指定某个代理人可以决定可使用哪些未来版本的 GNU 通用公共许可证，则该代理人公开声明接受某一版本，将永久授权你为本程序选择该版本。
 
-To do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the "copyright" line and a pointer to where the full notice is found.
+后续许可证版本可能给予你额外或不同的许可。但是，任何作者或版权持有人不会因你选择遵循后续版本而被施加额外义务。
 
-\<one line to give the program's name and a brief idea of what it does.\>   
+15. 免责声明。
+
+在适用法律允许的范围内，本程序不提供任何保证。除非另有书面说明，版权持有人和/或其他方按“原样”提供本程序，不作任何形式的明示或默示保证，包括但不限于对适销性和特定用途适用性的默示保证。关于本程序质量和性能的全部风险由你承担。如果本程序被证明存在缺陷，你承担所有必要服务、修理或更正的费用。
+
+16. 责任限制。
+
+除非适用法律要求或书面同意，在任何情况下，任何版权持有人，或任何按上述许可修改和/或传递本程序的其他方，均不对你承担损害赔偿责任，包括因使用或无法使用本程序而产生的任何一般、特殊、偶然或后果性损害（包括但不限于数据丢失或数据变得不准确，或你或第三方遭受的损失，或本程序无法与任何其他程序一起运行），即使该持有人或其他方已被告知可能发生此类损害，也不例外。
+
+17. 第 15 条和第 16 条的解释。
+
+如果上述免责声明和责任限制无法根据其条款在当地具有法律效力，审查法院应适用最接近于就本程序绝对放弃所有民事责任的当地法律，除非本程序副本是以收费换取保证或责任承担的形式提供。
+
+条款和条件结束
+
+如何将这些条款应用到你的新程序
+
+如果你开发一个新程序，并希望它对公众尽可能有用，实现这一点的最佳方式是让它成为自由软件，使每个人都可以根据这些条款重新分发和修改它。
+
+为此，请将以下声明附加到该程序中。最安全的做法是将其附加到每个源文件的开头，以最有效地说明不提供保证；并且每个文件至少应包含“copyright”行以及指向完整声明所在位置的提示。
+
+\<用一行文字说明程序名称和简要用途。\>
 Copyright (C) \<year\>  \<name of author\>
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+本程序是自由软件：你可以依据自由软件基金会发布的 GNU 通用公共许可证的条款重新分发和/或修改它，许可证版本可以是第 3 版，或（由你选择）任何后续版本。
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+分发本程序是希望它有用，但不提供任何保证；甚至不提供对适销性或特定用途适用性的默示保证。更多细节请参阅 GNU 通用公共许可证。
 
-You should have received a copy of the GNU General Public License along with this program. If not, see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
+你应当已经随本程序收到一份 GNU 通用公共许可证副本。如果没有，请参阅 [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)。
 
-Also add information on how to contact you by electronic and paper mail.
+还请添加如何通过电子邮件和纸质邮件联系你的信息。
 
-If the program does terminal interaction, make it output a short notice like this when it starts in an interactive mode:
+如果该程序会进行终端交互，请让它在交互模式启动时输出如下简短声明：
 
 \<program\> Copyright (C) \<year\> \<name of author\>  
-This program comes with ABSOLUTELY NO WARRANTY; for details type 'show w'. This is free software, and you are welcome to redistribute it under certain conditions; type 'show c' for details.
+本程序绝不提供任何保证；详情请输入 'show w'。这是自由软件，欢迎你在特定条件下重新分发；详情请输入 'show c'。
 
-The hypothetical commands 'show w' and 'show c' should show the appropriate parts of the General Public License. Of course, your program's commands might be different; for a GUI interface, you would use an "about box".
+假设命令 'show w' 和 'show c' 应显示通用公共许可证的相应部分。当然，你的程序命令可能不同；对于 GUI 界面，你可以使用“关于”对话框。
 
-You should also get your employer (if you work as a programmer) or school, if any, to sign a "copyright disclaimer" for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
+如果你是程序员，还应在必要时让你的雇主，或学校（如有）为该程序签署一份“版权放弃声明”。有关这方面以及如何应用和遵循 GNU GPL 的更多信息，请参阅 [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)。
 
-The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read [https://www.gnu.org/licenses/why-not-lgpl.html](https://www.gnu.org/licenses/why-not-lgpl.html).
-
----
-
-## **MIT-CMU License (HPND)**
-
-The following components are licensed under MIT-CMU License (HPND) reproduced below:
-
-**Pillow 11.3.0**, Copyright © 1997-2011 by Secret Labs AB, Copyright © 1995-2011 by Fredrik Lundh and contributors, Copyright © 2010 by Jeffrey A. Clark and contributors
-
-**License Text:**
-
-By obtaining, using, and/or copying this software and/or its associated documentation, you agree that you have read, understood, and will comply with the following terms and conditions:
-
-Permission to use, copy, modify and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appears in all copies, and that both that copyright notice and this permission notice appear in supporting documentation, and that the name of Secret Labs AB or the author not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission.
-
-SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+GNU 通用公共许可证不允许将你的程序并入专有程序。如果你的程序是子例程库，你可能会认为允许专有应用程序与该库链接更有用。如果这是你想做的事，请使用 GNU 宽通用公共许可证，而不是本许可证。但请先阅读 [https://www.gnu.org/licenses/why-not-lgpl.html](https://www.gnu.org/licenses/why-not-lgpl.html)。
 
 ---
 
-## **SIL Open Font License v1.1**
+## **MIT-CMU License (HPND)（MIT-CMU 许可证，HPND）**
 
-The following fonts are licensed under SIL Open Font License v1.1 reproduced below:
+以下组件根据下文转载的 MIT-CMU License (HPND) 获得许可：
 
-**Arsenal SC**, Copyright 2012 The Arsenal Project Authors ([andrij.design@gmail.com](mailto:andrij.design@gmail.com))
+**Pillow 11.3.0**，版权所有 © 1997-2011 Secret Labs AB，版权所有 © 1995-2011 Fredrik Lundh and contributors，版权所有 © 2010 Jeffrey A. Clark and contributors
 
-**Big Shoulders**, Copyright 2019 The Big Shoulders Project Authors ([https://github.com/xotypeco/big\_shoulders](https://github.com/xotypeco/big_shoulders))
+**许可证文本：**
 
-**Boldonse**, Copyright 2024 The Boldonse Project Authors ([https://github.com/googlefonts/boldonse](https://github.com/googlefonts/boldonse))
+通过获取、使用和/或复制本软件和/或其相关文档，你同意你已经阅读、理解并将遵守以下条款和条件：
 
-**Bricolage Grotesque**, Copyright 2022 The Bricolage Grotesque Project Authors ([https://github.com/ateliertriay/bricolage](https://github.com/ateliertriay/bricolage))
+特此免费授予出于任何目的使用、复制、修改和分发本软件及其文档的许可，前提是上述版权声明出现在所有副本中，并且该版权声明和本许可声明都出现在支持文档中，同时未经具体的事先书面许可，不得在与本软件分发相关的广告或宣传中使用 Secret Labs AB 或作者的名称。
 
-**Crimson Pro**, Copyright 2018 The Crimson Pro Project Authors ([https://github.com/Fonthausen/CrimsonPro](https://github.com/Fonthausen/CrimsonPro))
-
-**DM Mono**, Copyright 2020 The DM Mono Project Authors ([https://www.github.com/googlefonts/dm-mono](https://www.github.com/googlefonts/dm-mono))
-
-**Erica One**, Copyright (c) 2011 by LatinoType Limitada ([luciano@latinotype.com](mailto:luciano@latinotype.com)), with Reserved Font Name "Erica One"
-
-**Geist Mono**, Copyright 2024 The Geist Project Authors ([https://github.com/vercel/geist-font.git](https://github.com/vercel/geist-font.git))
-
-**Gloock**, Copyright 2022 The Gloock Project Authors ([https://github.com/duartp/gloock](https://github.com/duartp/gloock))
-
-**IBM Plex Mono**, Copyright © 2017 IBM Corp., with Reserved Font Name "Plex"
-
-**Instrument Sans**, Copyright 2022 The Instrument Sans Project Authors ([https://github.com/Instrument/instrument-sans](https://github.com/Instrument/instrument-sans))
-
-**Italiana**, Copyright (c) 2011, Santiago Orozco ([hi@typemade.mx](mailto:hi@typemade.mx)), with Reserved Font Name "Italiana"
-
-**JetBrains Mono**, Copyright 2020 The JetBrains Mono Project Authors ([https://github.com/JetBrains/JetBrainsMono](https://github.com/JetBrains/JetBrainsMono))
-
-**Jura**, Copyright 2019 The Jura Project Authors ([https://github.com/ossobuffo/jura](https://github.com/ossobuffo/jura))
-
-**Libre Baskerville**, Copyright 2012 The Libre Baskerville Project Authors ([https://github.com/impallari/Libre-Baskerville](https://github.com/impallari/Libre-Baskerville)), with Reserved Font Name "Libre Baskerville"
-
-**Lora**, Copyright 2011 The Lora Project Authors ([https://github.com/cyrealtype/Lora-Cyrillic](https://github.com/cyrealtype/Lora-Cyrillic)), with Reserved Font Name "Lora"
-
-**National Park**, Copyright 2025 The National Park Project Authors ([https://github.com/benhoepner/National-Park](https://github.com/benhoepner/National-Park))
-
-**Nothing You Could Do**, Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com)
-
-**Outfit**, Copyright 2021 The Outfit Project Authors ([https://github.com/Outfitio/Outfit-Fonts](https://github.com/Outfitio/Outfit-Fonts))
-
-**Pixelify Sans**, Copyright 2021 The Pixelify Sans Project Authors ([https://github.com/eifetx/Pixelify-Sans](https://github.com/eifetx/Pixelify-Sans))
-
-**Poiret One**, Copyright (c) 2011, Denis Masharov ([denis.masharov@gmail.com](mailto:denis.masharov@gmail.com))
-
-**Red Hat Mono**, Copyright 2024 The Red Hat Project Authors ([https://github.com/RedHatOfficial/RedHatFont](https://github.com/RedHatOfficial/RedHatFont))
-
-**Silkscreen**, Copyright 2001 The Silkscreen Project Authors ([https://github.com/googlefonts/silkscreen](https://github.com/googlefonts/silkscreen))
-
-**Smooch Sans**, Copyright 2016 The Smooch Sans Project Authors ([https://github.com/googlefonts/smooch-sans](https://github.com/googlefonts/smooch-sans))
-
-**Tektur**, Copyright 2023 The Tektur Project Authors ([https://www.github.com/hyvyys/Tektur](https://www.github.com/hyvyys/Tektur))
-
-**Work Sans**, Copyright 2019 The Work Sans Project Authors ([https://github.com/weiweihuanghuang/Work-Sans](https://github.com/weiweihuanghuang/Work-Sans))
-
-**Young Serif**, Copyright 2023 The Young Serif Project Authors ([https://github.com/noirblancrouge/YoungSerif](https://github.com/noirblancrouge/YoungSerif))
-
-**License Text:**
+SECRET LABS AB 和作者不对本软件作任何保证，包括对适销性和适用性的所有默示保证。在任何情况下，SECRET LABS AB 或作者均不对任何特殊、间接或后果性损害，或任何因使用中断、数据或利润损失而导致的损害承担责任，无论该责任是基于合同、疏忽或其他侵权行为，也无论其是否源于或关联于本软件的使用或性能。
 
 ---
 
-## **SIL OPEN FONT LICENSE Version 1.1 \- 26 February 2007**
+## **SIL Open Font License v1.1（SIL 开放字体许可证 v1.1）**
 
-PREAMBLE
+以下字体根据下文转载的 SIL Open Font License v1.1 获得许可：
 
-The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.
+**Arsenal SC**，版权所有 2012 The Arsenal Project Authors ([andrij.design@gmail.com](mailto:andrij.design@gmail.com))
 
-The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.
+**Big Shoulders**，版权所有 2019 The Big Shoulders Project Authors ([https://github.com/xotypeco/big\_shoulders](https://github.com/xotypeco/big_shoulders))
 
-DEFINITIONS
+**Boldonse**，版权所有 2024 The Boldonse Project Authors ([https://github.com/googlefonts/boldonse](https://github.com/googlefonts/boldonse))
 
-"Font Software" refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.
+**Bricolage Grotesque**，版权所有 2022 The Bricolage Grotesque Project Authors ([https://github.com/ateliertriay/bricolage](https://github.com/ateliertriay/bricolage))
 
-"Reserved Font Name" refers to any names specified as such after the copyright statement(s).
+**Crimson Pro**，版权所有 2018 The Crimson Pro Project Authors ([https://github.com/Fonthausen/CrimsonPro](https://github.com/Fonthausen/CrimsonPro))
 
-"Original Version" refers to the collection of Font Software components as distributed by the Copyright Holder(s).
+**DM Mono**，版权所有 2020 The DM Mono Project Authors ([https://www.github.com/googlefonts/dm-mono](https://www.github.com/googlefonts/dm-mono))
 
-"Modified Version" refers to any derivative made by adding to, deleting, or substituting \-- in part or in whole \-- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
+**Erica One**，版权所有 (c) 2011 LatinoType Limitada ([luciano@latinotype.com](mailto:luciano@latinotype.com))，保留字体名称为 “Erica One”
 
-"Author" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
+**Geist Mono**，版权所有 2024 The Geist Project Authors ([https://github.com/vercel/geist-font.git](https://github.com/vercel/geist-font.git))
 
-PERMISSION & CONDITIONS
+**Gloock**，版权所有 2022 The Gloock Project Authors ([https://github.com/duartp/gloock](https://github.com/duartp/gloock))
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
+**IBM Plex Mono**，版权所有 © 2017 IBM Corp.，保留字体名称为 “Plex”
 
-1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.  
-     
-2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.  
-     
-3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.  
-     
-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.  
-     
-5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
+**Instrument Sans**，版权所有 2022 The Instrument Sans Project Authors ([https://github.com/Instrument/instrument-sans](https://github.com/Instrument/instrument-sans))
 
-TERMINATION
+**Italiana**，版权所有 (c) 2011 Santiago Orozco ([hi@typemade.mx](mailto:hi@typemade.mx))，保留字体名称为 “Italiana”
 
-This license becomes null and void if any of the above conditions are not met.
+**JetBrains Mono**，版权所有 2020 The JetBrains Mono Project Authors ([https://github.com/JetBrains/JetBrainsMono](https://github.com/JetBrains/JetBrainsMono))
 
-DISCLAIMER
+**Jura**，版权所有 2019 The Jura Project Authors ([https://github.com/ossobuffo/jura](https://github.com/ossobuffo/jura))
 
-THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.  
+**Libre Baskerville**，版权所有 2012 The Libre Baskerville Project Authors ([https://github.com/impallari/Libre-Baskerville](https://github.com/impallari/Libre-Baskerville))，保留字体名称为 “Libre Baskerville”
+
+**Lora**，版权所有 2011 The Lora Project Authors ([https://github.com/cyrealtype/Lora-Cyrillic](https://github.com/cyrealtype/Lora-Cyrillic))，保留字体名称为 “Lora”
+
+**National Park**，版权所有 2025 The National Park Project Authors ([https://github.com/benhoepner/National-Park](https://github.com/benhoepner/National-Park))
+
+**Nothing You Could Do**，版权所有 (c) 2010 Kimberly Geswein (kimberlygeswein.com)
+
+**Outfit**，版权所有 2021 The Outfit Project Authors ([https://github.com/Outfitio/Outfit-Fonts](https://github.com/Outfitio/Outfit-Fonts))
+
+**Pixelify Sans**，版权所有 2021 The Pixelify Sans Project Authors ([https://github.com/eifetx/Pixelify-Sans](https://github.com/eifetx/Pixelify-Sans))
+
+**Poiret One**，版权所有 (c) 2011 Denis Masharov ([denis.masharov@gmail.com](mailto:denis.masharov@gmail.com))
+
+**Red Hat Mono**，版权所有 2024 The Red Hat Project Authors ([https://github.com/RedHatOfficial/RedHatFont](https://github.com/RedHatOfficial/RedHatFont))
+
+**Silkscreen**，版权所有 2001 The Silkscreen Project Authors ([https://github.com/googlefonts/silkscreen](https://github.com/googlefonts/silkscreen))
+
+**Smooch Sans**，版权所有 2016 The Smooch Sans Project Authors ([https://github.com/googlefonts/smooch-sans](https://github.com/googlefonts/smooch-sans))
+
+**Tektur**，版权所有 2023 The Tektur Project Authors ([https://www.github.com/hyvyys/Tektur](https://www.github.com/hyvyys/Tektur))
+
+**Work Sans**，版权所有 2019 The Work Sans Project Authors ([https://github.com/weiweihuanghuang/Work-Sans](https://github.com/weiweihuanghuang/Work-Sans))
+
+**Young Serif**，版权所有 2023 The Young Serif Project Authors ([https://github.com/noirblancrouge/YoungSerif](https://github.com/noirblancrouge/YoungSerif))
+
+**许可证文本：**
+
+---
+
+## **SIL OPEN FONT LICENSE Version 1.1 - 2007 年 2 月 26 日**
+
+序言
+
+开放字体许可证（OFL）的目标是促进全球范围内协作字体项目的发展，支持学术和语言社群的字体创作工作，并提供一个自由开放的框架，使字体能够与他人合作共享和改进。
+
+OFL 允许被许可字体被自由使用、研究、修改和重新分发，只要它们不被单独出售。字体，包括任何衍生作品，可以与任何软件捆绑、嵌入、重新分发和/或销售，前提是衍生作品不得使用任何保留名称。但是，字体及其衍生作品不得在任何其他类型的许可证下发布。字体必须保持在本许可证下的要求，不适用于使用这些字体或其衍生作品创建的任何文档。
+
+定义
+
+“字体软件”指版权持有人根据本许可证发布并明确标记为如此的一组文件。这可以包括源文件、构建脚本和文档。
+
+“保留字体名称”指版权声明后指定为此类的任何名称。
+
+“原始版本”指由版权持有人分发的字体软件组件集合。
+
+“修改版本”指通过添加、删除或替换原始版本的任何组件（部分或全部），通过更改格式，或通过将字体软件移植到新环境而产生的任何衍生作品。
+
+“作者”指为字体软件作出贡献的任何设计师、工程师、程序员、技术写作者或其他人员。
+
+许可与条件
+
+特此免费授予任何获得字体软件副本的人使用、研究、复制、合并、嵌入、修改、重新分发以及销售字体软件的修改和未修改副本的许可，但须遵守以下条件：
+
+1) 字体软件及其任何单独组件，无论是原始版本还是修改版本，均不得单独出售。
+
+2) 字体软件的原始版本或修改版本可以与任何软件捆绑、重新分发和/或销售，前提是每个副本均包含上述版权声明和本许可证。这些内容可以作为独立文本文件、人类可读的头部，或在文本或二进制文件中适当的机器可读元数据字段中包含，只要这些字段可以被用户轻易查看。
+
+3) 字体软件的任何修改版本不得使用保留字体名称，除非相应版权持有人明确授予书面许可。此限制仅适用于呈现给用户的主字体名称。
+
+4) 字体软件的版权持有人或作者的名称不得用于推广、背书或宣传任何修改版本，除非是为了确认版权持有人和作者的贡献，或获得他们明确的书面许可。
+
+5) 字体软件，无论修改与否，无论部分还是全部，都必须完全根据本许可证分发，且不得根据任何其他许可证分发。字体必须保持在本许可证下的要求，不适用于使用字体软件创建的任何文档。
+
+终止
+
+如果不满足上述任何条件，本许可证即告失效并作废。
+
+免责声明
+
+字体软件按“原样”提供，不提供任何形式的明示或默示保证，包括但不限于对适销性、特定用途适用性以及不侵犯版权、专利、商标或其他权利的任何保证。在任何情况下，版权持有人均不对任何索赔、损害或其他责任承担责任，包括任何一般、特殊、间接、偶然或后果性损害，无论是在合同、侵权还是其他诉讼中产生，也无论其是否源于、出自字体软件的使用或无法使用，或与字体软件的其他交易相关。
