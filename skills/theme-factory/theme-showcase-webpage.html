@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主题工厂展示</title>
+  <style>
+    :root {
+      --ink: #171716;
+      --muted: #696a63;
+      --paper: #f6f6f0;
+      --panel: #ffffff;
+      --line: #d8d8cf;
+      --shadow: 0 18px 50px rgba(23, 23, 22, 0.1);
+      --font-display: Georgia, "Noto Serif CJK SC", "Microsoft YaHei", "Times New Roman", serif;
+      --font-body: "Trebuchet MS", "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(23, 23, 22, 0.045) 1px, transparent 1px),
+        linear-gradient(rgba(23, 23, 22, 0.04) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: var(--font-body);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button {
+      color: inherit;
+    }
+
+    .site-shell {
+      min-height: 100vh;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 72px;
+      padding: 16px clamp(20px, 4vw, 56px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(246, 246, 240, 0.9);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      flex: 0 0 auto;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: var(--font-display);
+      font-size: 1rem;
+    }
+
+    .brand span:last-child {
+      min-width: 0;
+      font-size: 0.84rem;
+      line-height: 1.1;
+    }
+
+    .topbar nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(14px, 3vw, 34px);
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .topbar a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.7fr);
+      gap: clamp(30px, 6vw, 88px);
+      align-items: end;
+      padding: clamp(46px, 7vw, 92px) clamp(20px, 4vw, 56px) clamp(34px, 5vw, 66px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 48px;
+      height: 1px;
+      background: var(--ink);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 7.5em;
+      font-family: var(--font-display);
+      font-size: clamp(4.2rem, 7.2vw, 8.4rem);
+      font-weight: 700;
+      line-height: 1.05;
+    }
+
+    h1 span {
+      display: block;
+    }
+
+    .lede {
+      max-width: 52rem;
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+    }
+
+    .hero-panel {
+      display: grid;
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-panel-row {
+      display: grid;
+      grid-template-columns: 0.7fr 1fr;
+      min-height: 94px;
+      background: var(--panel);
+    }
+
+    .hero-panel-row > div {
+      padding: 20px;
+    }
+
+    .hero-panel-row strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+    }
+
+    .hero-panel-row span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .theme-ribbon {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      height: 96px;
+    }
+
+    .theme-ribbon span {
+      display: block;
+      height: 100%;
+    }
+
+    .section {
+      padding: clamp(46px, 6vw, 86px) clamp(20px, 4vw, 56px);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 26px;
+      margin-bottom: clamp(28px, 4vw, 48px);
+    }
+
+    h2 {
+      max-width: 13ch;
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 5.5vw, 6rem);
+      font-weight: 700;
+    }
+
+    .section-note {
+      max-width: 34rem;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .theme-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: clamp(14px, 1.5vw, 22px);
+    }
+
+    .theme-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      min-height: 460px;
+      padding: 16px;
+      border: 1px solid color-mix(in srgb, var(--theme-dark), transparent 72%);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--theme-bg), white 12%), var(--theme-bg));
+      box-shadow: 0 8px 28px color-mix(in srgb, var(--theme-dark), transparent 88%);
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .theme-card:hover,
+    .theme-card:focus-visible,
+    .theme-card.is-active {
+      border-color: var(--theme-accent);
+      box-shadow: 0 18px 46px color-mix(in srgb, var(--theme-dark), transparent 78%);
+      outline: none;
+      transform: translateY(-4px);
+    }
+
+    .card-head {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .theme-index {
+      color: color-mix(in srgb, var(--theme-dark), transparent 45%);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .theme-card h3 {
+      max-width: 10ch;
+      margin-top: 8px;
+      color: var(--theme-dark);
+      font-family: var(--theme-head);
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 0.98;
+    }
+
+    .theme-tag {
+      min-width: 0;
+      max-width: 96px;
+      padding: 6px 8px;
+      background: var(--theme-dark);
+      color: var(--theme-light);
+      font-size: 0.66rem;
+      font-weight: 800;
+      line-height: 1.05;
+      overflow-wrap: anywhere;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .mini-slide {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      border: 1px solid color-mix(in srgb, var(--theme-dark), transparent 70%);
+      border-radius: 6px;
+      background: var(--theme-dark);
+    }
+
+    .mini-slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, transparent 0 62%, color-mix(in srgb, var(--theme-accent), transparent 5%) 62% 100%);
+    }
+
+    .slide-kicker {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      color: color-mix(in srgb, var(--theme-light), transparent 18%);
+      font-family: var(--theme-body);
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .slide-title {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      max-width: 60%;
+      color: var(--theme-light);
+      font-family: var(--theme-head);
+      font-size: clamp(0.95rem, 1.45vw, 1.12rem);
+      font-weight: 800;
+      line-height: 1;
+      overflow-wrap: break-word;
+    }
+
+    .slide-stat {
+      position: absolute;
+      right: 12px;
+      bottom: 16px;
+      color: var(--theme-dark);
+      font-family: var(--theme-head);
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      opacity: 0.72;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+    }
+
+    .swatch {
+      min-height: 54px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+    }
+
+    .theme-card p {
+      margin: 0;
+      color: color-mix(in srgb, var(--theme-dark), transparent 22%);
+      font-family: var(--theme-body);
+      font-size: 0.92rem;
+    }
+
+    .meta-list {
+      display: grid;
+      gap: 9px;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid color-mix(in srgb, var(--theme-dark), transparent 82%);
+      color: color-mix(in srgb, var(--theme-dark), transparent 16%);
+      font-size: 0.76rem;
+    }
+
+    .meta-list div {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    .meta-list strong {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+    }
+
+    .detail-section {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(360px, 0.58fr);
+      gap: clamp(26px, 5vw, 70px);
+      align-items: stretch;
+      padding-top: 0;
+    }
+
+    .detail-copy {
+      padding: clamp(28px, 4vw, 54px);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .detail-copy h2 {
+      max-width: 10ch;
+    }
+
+    .detail-copy p {
+      max-width: 46rem;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .theme-table {
+      display: grid;
+      margin-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .theme-table-row {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 22px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .theme-table-row strong {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+    }
+
+    .theme-table-row span {
+      color: var(--muted);
+    }
+
+    .large-preview {
+      position: sticky;
+      top: 100px;
+      display: flex;
+      min-height: 540px;
+      padding: clamp(18px, 3vw, 30px);
+      border: 1px solid color-mix(in srgb, var(--active-dark), transparent 58%);
+      border-radius: 8px;
+      background: var(--active-bg);
+      box-shadow: var(--shadow);
+    }
+
+    .slide-canvas {
+      position: relative;
+      flex: 1;
+      min-height: 100%;
+      overflow: hidden;
+      border-radius: 6px;
+      background: var(--active-dark);
+      color: var(--active-light);
+    }
+
+    .slide-canvas::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, transparent 0 58%, var(--active-accent) 58% 100%),
+        linear-gradient(180deg, color-mix(in srgb, var(--active-mid), transparent 58%), transparent 46%);
+      opacity: 0.98;
+    }
+
+    .slide-canvas::after {
+      content: "";
+      position: absolute;
+      right: 10%;
+      top: 12%;
+      width: 34%;
+      aspect-ratio: 1;
+      border: 1px solid color-mix(in srgb, var(--active-light), transparent 35%);
+      transform: rotate(12deg);
+    }
+
+    .preview-label {
+      position: absolute;
+      top: 32px;
+      left: 34px;
+      z-index: 1;
+      font-family: var(--active-body);
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .preview-title {
+      position: absolute;
+      left: 34px;
+      bottom: 118px;
+      z-index: 1;
+      max-width: 9ch;
+      font-family: var(--active-head);
+      font-size: clamp(3rem, 5.8vw, 5.8rem);
+      font-weight: 800;
+      line-height: 0.92;
+    }
+
+    .preview-body {
+      position: absolute;
+      left: 36px;
+      bottom: 40px;
+      z-index: 1;
+      max-width: 52%;
+      font-family: var(--active-body);
+      font-size: 1rem;
+      opacity: 0.82;
+    }
+
+    .preview-stat {
+      position: absolute;
+      right: 34px;
+      bottom: 34px;
+      z-index: 1;
+      color: var(--active-dark);
+      font-family: var(--active-head);
+      font-size: clamp(4rem, 7vw, 7rem);
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 30px clamp(20px, 4vw, 56px);
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1280px) {
+      .theme-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 940px) {
+      .hero,
+      .detail-section {
+        grid-template-columns: 1fr;
+      }
+
+      .large-preview {
+        position: relative;
+        top: auto;
+      }
+
+      .theme-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .topbar nav {
+        flex-wrap: wrap;
+      }
+
+      h1 {
+        max-width: 100%;
+        font-size: clamp(2.7rem, 10.6vw, 3.1rem);
+      }
+
+      .section-note,
+      .lede {
+        width: min(100%, 320px);
+        max-width: 320px;
+        overflow-wrap: break-word;
+      }
+
+      .hero-panel-row,
+      .section-header,
+      .theme-grid,
+      .theme-table-row {
+        grid-template-columns: 1fr;
+      }
+
+      .section-header,
+      .footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .theme-card {
+        min-height: 430px;
+      }
+
+      .card-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .theme-tag {
+        min-width: 0;
+        max-width: 100%;
+      }
+
+      .large-preview {
+        min-height: 430px;
+      }
+
+      .preview-title {
+        max-width: 8ch;
+        font-size: clamp(2.8rem, 14vw, 4rem);
+      }
+
+      .preview-body {
+        max-width: 58%;
+      }
+
+      .preview-stat {
+        font-size: clamp(3.2rem, 16vw, 5rem);
+      }
+    }
+
+    @media (max-width: 430px) {
+      .hero > div,
+      .section-header,
+      .theme-grid,
+      .detail-section,
+      .detail-copy,
+      .hero-panel,
+      .theme-card {
+        width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+        min-width: 0;
+      }
+
+      .theme-ribbon {
+        grid-template-columns: repeat(5, 1fr);
+        height: 132px;
+      }
+
+      .section-note,
+      .lede {
+        width: min(100%, 320px);
+        max-width: 320px;
+        overflow-wrap: break-word;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">10 套主题系统</p>
+          <h1><span>视觉主题</span><span>展示</span></h1>
+          <p class="lede">
+            一个用于浏览主题工厂预设的网页展厅。每套主题都展示真实色板、
+            标题字体、正文字体，以及使用该主题颜色构建的模拟幻灯片界面。
+          </p>
+        </div>
+
+        <aside class="hero-panel" aria-label="主题展示摘要">
+          <div class="theme-ribbon" aria-hidden="true">
+            <span style="background:#1a2332"></span>
+            <span style="background:#e76f51"></span>
+            <span style="background:#2d4a2b"></span>
+            <span style="background:#36454f"></span>
+            <span style="background:#f4a900"></span>
+            <span style="background:#4a6fa5"></span>
+            <span style="background:#d4a5a5"></span>
+            <span style="background:#0066ff"></span>
+            <span style="background:#4a7c59"></span>
+            <span style="background:#2b1e3e"></span>
+          </div>
+          <div class="hero-panel-row">
+            <div>
+              <strong>覆盖范围</strong>
+              <span>幻灯片、报告、文档和 HTML 页面作品。</span>
+            </div>
+            <div>
+              <strong>规则</strong>
+              <span>一个主导色，若干辅助色，以及一个清晰强调色。</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="themes">
+        <div class="section-header">
+          <h2>主题库</h2>
+          <p class="section-note">
+            点击任意主题卡片即可更新下方的大预览。页面中的色值与字体配置
+            来自主题工厂 skill 的主题文件。
+          </p>
+        </div>
+
+        <div class="theme-grid" id="themeGrid" aria-label="主题卡片"></div>
+      </section>
+
+      <section class="section detail-section" id="detail">
+        <div class="detail-copy">
+          <p class="eyebrow">当前主题</p>
+          <h2 id="detailTitle">海洋深处</h2>
+          <p id="detailDescription">
+            一套专业、沉静的海洋主题，传达深海般的稳定与信任感。
+          </p>
+
+          <div class="theme-table" aria-label="当前主题详情">
+            <div class="theme-table-row">
+              <strong>色板</strong>
+              <span id="detailPalette">深海藏青、青绿、海沫蓝、奶油白</span>
+            </div>
+            <div class="theme-table-row">
+              <strong>字体</strong>
+              <span id="detailTypography">标题：DejaVu Sans Bold。正文：DejaVu Sans。</span>
+            </div>
+            <div class="theme-table-row">
+              <strong>适用场景</strong>
+              <span id="detailUse">企业演示、财务报告、专业咨询方案、建立信任的内容。</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="large-preview" aria-label="当前主题大预览">
+          <div class="slide-canvas">
+            <div class="preview-label" id="previewLabel">主题 01</div>
+            <div class="preview-title" id="previewTitle">海洋深处</div>
+            <div class="preview-body" id="previewBody">专业、沉静、海洋感，适合建立信任的结构化内容。</div>
+            <div class="preview-stat" id="previewStat">01</div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>主题工厂网页展示</span>
+      <span>10 套预设来自 skills/theme-factory/themes</span>
+    </footer>
+  </div>
+
+  <script>
+    const themes = [
+      {
+        name: "海洋深处",
+        description: "一套专业、沉静的海洋主题，传达深海般的稳定与信任感。",
+        colors: [
+          ["深海藏青", "#1a2332"],
+          ["青绿", "#2d8b8b"],
+          ["海沫蓝", "#a8dadc"],
+          ["奶油白", "#f1faee"]
+        ],
+        header: "DejaVu Sans Bold",
+        body: "DejaVu Sans",
+        use: "企业演示、财务报告、专业咨询方案、建立信任的内容。"
+      },
+      {
+        name: "日落大道",
+        description: "一套温暖而鲜明的主题，灵感来自黄金时刻的日落，适合充满能量的创意表达。",
+        colors: [
+          ["焦橙", "#e76f51"],
+          ["珊瑚橙", "#f4a261"],
+          ["暖沙黄", "#e9c46a"],
+          ["深紫蓝", "#264653"]
+        ],
+        header: "DejaVu Serif Bold",
+        body: "DejaVu Sans",
+        use: "创意提案、市场营销演示、生活方式品牌、活动推广、鼓舞型内容。"
+      },
+      {
+        name: "森林冠层",
+        description: "一套自然、稳重的主题，以密林环境中的大地色为主要灵感。",
+        colors: [
+          ["森林绿", "#2d4a2b"],
+          ["鼠尾草绿", "#7d8471"],
+          ["橄榄绿", "#a4ac86"],
+          ["象牙白", "#faf9f6"]
+        ],
+        header: "FreeSerif Bold",
+        body: "FreeSans",
+        use: "环保演示、可持续发展报告、户外品牌、健康内容、有机产品。"
+      },
+      {
+        name: "现代极简",
+        description: "一套干净、当代的灰阶主题，适配范围广，视觉克制而专业。",
+        colors: [
+          ["炭灰", "#36454f"],
+          ["石板灰", "#708090"],
+          ["浅灰", "#d3d3d3"],
+          ["白色", "#ffffff"]
+        ],
+        header: "DejaVu Sans Bold",
+        body: "DejaVu Sans",
+        use: "科技演示、建筑作品集、设计展示、现代商业提案、数据可视化。"
+      },
+      {
+        name: "黄金时刻",
+        description: "一套浓郁温暖的秋日色板，营造亲切而精致的氛围。",
+        colors: [
+          ["芥末黄", "#f4a900"],
+          ["陶土红", "#c1666b"],
+          ["暖米色", "#d4b896"],
+          ["巧克力棕", "#4a403a"]
+        ],
+        header: "FreeSans Bold",
+        body: "FreeSans",
+        use: "餐饮演示、酒店品牌、秋季活动、温暖生活方式内容、手作产品。"
+      },
+      {
+        name: "北境霜色",
+        description: "一套冷冽清透的冬季主题，传达清晰、精准与专业感。",
+        colors: [
+          ["冰蓝", "#d4e4f7"],
+          ["钢蓝", "#4a6fa5"],
+          ["银色", "#c0c0c0"],
+          ["冷白", "#fafafa"]
+        ],
+        header: "DejaVu Sans Bold",
+        body: "DejaVu Sans",
+        use: "医疗健康演示、技术方案、冬季运动、清洁科技、医药内容。"
+      },
+      {
+        name: "沙漠玫瑰",
+        description: "一套柔和而精致的主题，使用低饱和灰粉色调，适合优雅表达。",
+        colors: [
+          ["灰粉玫瑰", "#d4a5a5"],
+          ["陶泥色", "#b87d6d"],
+          ["沙色", "#e8d5c4"],
+          ["深勃艮第红", "#5d2e46"]
+        ],
+        header: "FreeSans Bold",
+        body: "FreeSans",
+        use: "时尚演示、美妆品牌、婚礼策划、室内设计、精品商业。"
+      },
+      {
+        name: "科技革新",
+        description: "一套大胆现代的高对比主题，适合前沿科技与创新内容。",
+        colors: [
+          ["电光蓝", "#0066ff"],
+          ["霓虹青", "#00ffff"],
+          ["暗灰", "#1e1e1e"],
+          ["白色", "#ffffff"]
+        ],
+        header: "DejaVu Sans Bold",
+        body: "DejaVu Sans",
+        use: "科技创业、软件发布、创新展示、AI/ML 演示、数字化转型内容。"
+      },
+      {
+        name: "植物花园",
+        description: "一套清新有机的花园主题，使用明快的自然色彩，适合活泼表达。",
+        colors: [
+          ["蕨叶绿", "#4a7c59"],
+          ["金盏花黄", "#f9a620"],
+          ["陶土红", "#b7472a"],
+          ["奶油白", "#f5f3ed"]
+        ],
+        header: "DejaVu Serif Bold",
+        body: "DejaVu Sans",
+        use: "园艺中心、食品演示、农场到餐桌内容、植物品牌、天然产品。"
+      },
+      {
+        name: "午夜星河",
+        description: "一套戏剧化的宇宙主题，以深紫和神秘色调制造强烈视觉冲击。",
+        colors: [
+          ["深紫", "#2b1e3e"],
+          ["宇宙蓝", "#4a4e8f"],
+          ["薰衣草紫", "#a490c2"],
+          ["银白", "#e6e6fa"]
+        ],
+        header: "FreeSans Bold",
+        body: "FreeSans",
+        use: "娱乐行业、游戏演示、夜生活场馆、奢侈品牌、创意机构。"
+      }
+    ];
+
+    const grid = document.getElementById("themeGrid");
+
+    function fontStack(fontName, fallback) {
+      return `"${fontName}", ${fallback}`;
+    }
+
+    function hexToRgb(hex) {
+      const value = hex.replace("#", "");
+      return {
+        r: parseInt(value.slice(0, 2), 16),
+        g: parseInt(value.slice(2, 4), 16),
+        b: parseInt(value.slice(4, 6), 16)
+      };
+    }
+
+    function luminance(hex) {
+      const { r, g, b } = hexToRgb(hex);
+      return (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+    }
+
+    function themeRoles(theme) {
+      const sorted = [...theme.colors].sort((a, b) => luminance(a[1]) - luminance(b[1]));
+      const dark = sorted[0][1];
+      const light = sorted[sorted.length - 1][1];
+      const accent = theme.colors.find(([, value]) => value !== dark && value !== light)?.[1] || theme.colors[0][1];
+      const mid = sorted[Math.min(2, sorted.length - 1)][1];
+      const bg = sorted[Math.max(1, sorted.length - 2)][1];
+      return { dark, light, accent, mid, bg };
+    }
+
+    function setThemeVars(el, theme) {
+      const { dark, light, accent, mid, bg } = themeRoles(theme);
+      el.style.setProperty("--theme-dark", dark);
+      el.style.setProperty("--theme-accent", accent);
+      el.style.setProperty("--theme-mid", mid);
+      el.style.setProperty("--theme-bg", bg);
+      el.style.setProperty("--theme-light", light);
+      el.style.setProperty("--theme-head", fontStack(theme.header, "\"Noto Sans CJK SC\", \"Microsoft YaHei\", Arial, sans-serif"));
+      el.style.setProperty("--theme-body", fontStack(theme.body, "\"Noto Sans CJK SC\", \"Microsoft YaHei\", Arial, sans-serif"));
+    }
+
+    function updateDetail(index) {
+      const theme = themes[index];
+      document.querySelectorAll(".theme-card").forEach((card, cardIndex) => {
+        card.classList.toggle("is-active", cardIndex === index);
+      });
+
+      document.getElementById("detailTitle").textContent = theme.name;
+      document.getElementById("detailDescription").textContent = theme.description;
+      document.getElementById("detailPalette").textContent = theme.colors.map(([name, value]) => `${name} ${value}`).join(", ");
+      document.getElementById("detailTypography").textContent = `标题：${theme.header}。正文：${theme.body}。`;
+      document.getElementById("detailUse").textContent = theme.use;
+      document.getElementById("previewLabel").textContent = `主题 ${String(index + 1).padStart(2, "0")}`;
+      document.getElementById("previewTitle").textContent = theme.name;
+      document.getElementById("previewBody").textContent = theme.description;
+      document.getElementById("previewStat").textContent = String(index + 1).padStart(2, "0");
+
+      const preview = document.querySelector(".large-preview");
+      const { dark, light, accent, mid, bg } = themeRoles(theme);
+      preview.style.setProperty("--active-dark", dark);
+      preview.style.setProperty("--active-accent", accent);
+      preview.style.setProperty("--active-mid", mid);
+      preview.style.setProperty("--active-bg", bg);
+      preview.style.setProperty("--active-light", light);
+      preview.style.setProperty("--active-head", fontStack(theme.header, "\"Noto Sans CJK SC\", \"Microsoft YaHei\", Arial, sans-serif"));
+      preview.style.setProperty("--active-body", fontStack(theme.body, "\"Noto Sans CJK SC\", \"Microsoft YaHei\", Arial, sans-serif"));
+    }
+
+    themes.forEach((theme, index) => {
+      const card = document.createElement("button");
+      card.className = "theme-card";
+      card.type = "button";
+      card.setAttribute("aria-label", `查看${theme.name}主题详情`);
+      setThemeVars(card, theme);
+
+      card.innerHTML = `
+        <div class="card-head">
+          <div>
+            <div class="theme-index">主题 ${String(index + 1).padStart(2, "0")}</div>
+            <h3>${theme.name}</h3>
+          </div>
+          <span class="theme-tag">${theme.colors[0][0]}</span>
+        </div>
+        <div class="mini-slide" aria-hidden="true">
+          <span class="slide-kicker">预览</span>
+          <span class="slide-title">${theme.name}</span>
+          <span class="slide-stat">${String(index + 1).padStart(2, "0")}</span>
+        </div>
+        <div class="swatches">
+          ${theme.colors.map(([, value]) => `<span class="swatch" style="background:${value}"></span>`).join("")}
+        </div>
+        <p>${theme.description}</p>
+        <div class="meta-list">
+          <div><strong>标题</strong><span>${theme.header}</span></div>
+          <div><strong>正文</strong><span>${theme.body}</span></div>
+        </div>
+      `;
+
+      card.addEventListener("click", () => updateDetail(index));
+      grid.appendChild(card);
+    });
+
+    updateDetail(0);
+  </script>
+</body>
+</html>
